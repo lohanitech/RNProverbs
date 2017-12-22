@@ -8,3 +8,6 @@
     - Managing state
 2. Using scrollview
 3. Creating custom component
+
+## Preview
+![preview image](preview.gif)
