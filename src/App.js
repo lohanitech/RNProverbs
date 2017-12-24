@@ -35,12 +35,9 @@ export default class App extends Component<{}> {
   render() {
     return (
       <View style={{flex: 1}}>
-        <ScrollView style={{flex: 1}} contentContainerStyle={styles.container}>
-          <Text style={styles.title}>
-            Proverbs
-          </Text>
+        <View style={{flex: 1}} contentContainerStyle={styles.container}>
           <Proverbs />
-        </ScrollView>
+        </View>
         <View style={styles.ratingContainer}>
           <Mood rating={this.state.rating} />
           <Button title="My Mood" onPress={this.handleButtonPress} />
@@ -54,12 +51,6 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#F5FCFF',
     paddingBottom: 20
-  },
-  title: {
-    fontSize: 30,
-    fontWeight: '600',
-    paddingTop: 10,
-    textAlign: 'center'
   },
   ratingContainer: {
     justifyContent: 'center',
