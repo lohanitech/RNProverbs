@@ -7,9 +7,9 @@ import proverbs from '../assets/proverbs.json';
 export default class Mood extends Component {
 
     renderItem = ({item}) => (
-        <View style={styles.proverbItem}>
+        <TouchableOpacity onPress={()=>this.props.onPressItem(item)} style={styles.proverbItem}>
             <Text style={styles.proverbText}>{item.proverb}</Text>
-        </View>
+        </TouchableOpacity>
     )
 
     renderHeader = () => (
